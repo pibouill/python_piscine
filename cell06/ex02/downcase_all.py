@@ -2,16 +2,25 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    upcase_it.py                                       :+:      :+:    :+:    #
+#    downcase_all.py                                    :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: pibouill <pibouill@student.42prague.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/05 11:23:28 by pibouill          #+#    #+#              #
-#    Updated: 2024/09/05 11:23:33 by pibouill         ###   ########.fr        #
+#    Created: 2024/09/05 11:57:43 by pibouill          #+#    #+#              #
+#    Updated: 2024/09/05 11:57:43 by pibouill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-def	upcase_it(str):
-	return str.upper()
+import sys
 
-print(upcase_it("hello"))
+def	downcase_all(str):
+	return str.lower()
+
+if len(sys.argv) > 1:
+	args = sys.argv[1:]
+
+	for param in args:
+		print(downcase_all(param))
+else:
+	print("none")
+
