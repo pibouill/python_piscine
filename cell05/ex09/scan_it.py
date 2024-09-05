@@ -14,9 +14,11 @@
 import sys
 import re
 
-if len(sys.argv) > 2:
+if len(sys.argv) == 3:
 
 	matches = re.findall(sys.argv[1], sys.argv[2])
+	if len(sys.argv[1]) == 0:
+		sys.exit("none")
 	if len(matches) > 0:
 		print(len(matches))
 	else:
