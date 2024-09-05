@@ -1,20 +1,17 @@
-#!/usr/bin/env python
+#!/bin/python3
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    hello_all.py                                       :+:      :+:    :+:    #
+#    upcase_it.py                                       :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pibouill <pibouill@student.42prague.com>   +#+  +:+       +#+         #
+#    By: pibouill <pibouill@student.42prague.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/04 11:22:54 by pibouill          #+#    #+#              #
-#    Updated: 2024/09/04 11:22:54 by pibouill         ###   ########.fr        #
+#    Created: 2024/09/05 11:23:28 by pibouill          #+#    #+#              #
+#    Updated: 2024/09/05 11:23:33 by pibouill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-def	hello():
-	print("Hello Everyone!")
+def	upcase_it(str):
+	print(str.upper())
 
-class	c_greeting:
-	my_method = hello
-
-hello()
+print(upcase_it("hello"))
