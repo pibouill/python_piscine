@@ -2,29 +2,28 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    your_namebook.py                                   :+:      :+:    :+:    #
+#    family_affairs.py                                  :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: pibouill <pibouill@student.42prague.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/05 13:55:09 by pibouill          #+#    #+#              #
-#    Updated: 2024/09/05 13:55:09 by pibouill         ###   ########.fr        #
+#    Created: 2024/09/05 15:20:09 by pibouill          #+#    #+#              #
+#    Updated: 2024/09/05 15:20:09 by pibouill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-def	array_of_names(persons):
-	full_names = []
-	for first_name, last_name in persons.items():
-		full_name = f"{first_name.capitalize()} {last_name.capitalize()}"
-		full_names += [full_name]
-	return full_names
+def	find_the_redheads(family):
+	red_heads = []
+	for name, color in family.items():
+		if color == 'red':
+			red_heads += [name]
+	return red_heads
 
-persons = {
-"jean": "valjean",
-"grace": "hopper",
-"xavier": "niel",
-"fifi": "brindacier",
-"jean": "luc",
-"bad": "benny"
+dupont_family = {
+"florian": "red",
+"marie": "blond",
+"virginie": "brunette",
+"david": "red",
+"franck": "red",
 }
 
-print(array_of_names(persons))
+print(find_the_redheads(dupont_family))

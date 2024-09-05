@@ -2,29 +2,32 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    your_namebook.py                                   :+:      :+:    :+:    #
+#    help_your_professor.py                             :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: pibouill <pibouill@student.42prague.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/05 13:55:09 by pibouill          #+#    #+#              #
-#    Updated: 2024/09/05 13:55:09 by pibouill         ###   ########.fr        #
+#    Created: 2024/09/05 15:25:46 by pibouill          #+#    #+#              #
+#    Updated: 2024/09/05 15:25:46 by pibouill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-def	array_of_names(persons):
-	full_names = []
-	for first_name, last_name in persons.items():
-		full_name = f"{first_name.capitalize()} {last_name.capitalize()}"
-		full_names += [full_name]
-	return full_names
+def	average(grades):
+	n_grades = len(grades)
+	return sum(grades.values()) / n_grades
 
-persons = {
-"jean": "valjean",
-"grace": "hopper",
-"xavier": "niel",
-"fifi": "brindacier",
-"jean": "luc",
-"bad": "benny"
+class_3B = {
+"marine": 18,
+"jean": 15,
+"coline": 8,
+"luc": 9
 }
 
-print(array_of_names(persons))
+class_3C = {
+"quentin": 17,
+"julie": 15,
+"marc": 8,
+"stephanie": 13
+}
+
+print(f"Average for class 3B: {average(class_3B)}.")
+print(f"Average for class 3C: {average(class_3C)}.")
