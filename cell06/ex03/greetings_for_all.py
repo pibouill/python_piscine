@@ -2,27 +2,28 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    scan_it.py                                         :+:      :+:    :+:    #
+#    greetings_for_all.py                               :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pibouill <pibouill@student.42prague.com>   +#+  +:+       +#+         #
+#    By: pibouill <pibouill@student.42prague.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/03 11:54:11 by pibouill          #+#    #+#              #
-#    Updated: 2024/09/03 11:54:11 by pibouill         ###   ########.fr        #
+#    Created: 2024/09/05 12:07:33 by pibouill          #+#    #+#              #
+#    Updated: 2024/09/05 12:07:33 by pibouill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-import sys
-import re
-
-if len(sys.argv) == 3:
-
-	matches = re.findall(sys.argv[1], sys.argv[2])
-	if len(sys.argv[1]) == 0:
-		sys.exit("none")
-	if len(matches) > 0:
-		print(len(matches))
+def	greetings(arg = None):
+	if arg is None:
+		print("Hello, noble stranger.")
+		return
+	res = isinstance(arg, str)
+	if res == 1:
+		print("Hello,", arg)
 	else:
-		print("none")
-else:
-	print("none")
+		print("Error! It was not a name.")
+
+greetings('Alexandra')
+greetings('Wil')
+greetings()
+greetings(42)
+
 

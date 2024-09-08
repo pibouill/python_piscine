@@ -2,27 +2,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    strings_are_arrays.py                              :+:      :+:    :+:    #
+#    scope_that.py                                      :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pibouill <pibouill@student.42prague.com>   +#+  +:+       +#+         #
+#    By: pibouill <pibouill@student.42prague.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/03 12:30:52 by pibouill          #+#    #+#              #
-#    Updated: 2024/09/03 12:30:52 by pibouill         ###   ########.fr        #
+#    Created: 2024/09/05 13:42:12 by pibouill          #+#    #+#              #
+#    Updated: 2024/09/05 13:42:12 by pibouill         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-import sys
+def	add_one(arg):
+	return arg + 1
 
-count = 0
+a = 50
+print(a)
+add_one(a)
+print(a)
 
-if len(sys.argv) == 2:
-	for z in sys.argv[1]:
-		if z == 'z':
-			print("z", end='')
-			count += 1
-	if count == 0:
-		print("none")
-	else:
-		print()
-else:
-	print("none")

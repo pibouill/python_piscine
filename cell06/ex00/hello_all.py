@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/bin/python3
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
@@ -18,4 +18,3 @@ class	c_greeting:
 	my_method = hello
 
 hello()
-c_greeting.hello()
