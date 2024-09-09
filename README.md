@@ -1,4 +1,4 @@
-# 42 Python Discovery Piscine
+# 42 - Python Discovery Piscine
 
 >Welcome to the discovery pool of computer programming! This experience aims to introduce you to the fundamentals of coding while embracing peer-learning, the core educational model of 42.
 >
@@ -13,3 +13,19 @@
 >    Personalized Journey: Everyone's path in this pool will be different. You’ll choose which challenges to tackle, discover your own solutions, and validate your projects in your unique way.
 >
 >This is a collective yet personal experience designed to help you grow and build connections for future collaborations. Good luck and enjoy the journey!
+
+
+## Python topics covered
+
+- Printing
+- Basic calculations
+- String manipulation(s)
+- Getting and handling input
+- Function creation
+- Handling arrays and their basic functions
+- Handling program parameters (`sys`)
+- Dictionaries
+
+### Subject example:
+
+![cell05ex12](assets/pypiscine_sub_ex.png)
