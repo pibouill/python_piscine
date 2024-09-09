@@ -26,6 +26,6 @@
 - Handling program parameters (`sys`)
 - Dictionaries
 
-### Subject example:
+### Subject example (cell05ex12):
 
 ![cell05ex12](assets/pypiscine_sub_ex.png)
