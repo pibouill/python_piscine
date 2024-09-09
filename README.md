@@ -25,4 +25,4 @@
 
 ### Subject example (cell05ex12):
 
-![cell05ex12](assets/pypiscine_sub_ex.png)
+![cell05ex12](assets/pypiscine_sub_ex.png | width=50%)
