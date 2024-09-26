@@ -11,7 +11,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-def	hello():
+def hello():
 	print("Hello Everyone!")
 
 class	c_greeting:
